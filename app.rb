@@ -1,6 +1,7 @@
-# myapp.rb
-require 'sinatra'
+require 'sinatra/base'
 
-get '/' do
-  haml 'No Hello world!'
+class WeihApp < Sinatra::Base
+  get '/' do
+    'No Hello world!'
+  end
 end
