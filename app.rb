@@ -1,7 +1,9 @@
 require 'sinatra/base'
 
-class WeihApp < Sinatra::Base
-  get '/' do
-    'No Hello world!'
+module SinatraBone
+  class App < Sinatra::Base
+    get '/' do
+      haml :index
+    end
   end
 end
